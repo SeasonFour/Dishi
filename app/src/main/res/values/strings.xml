@@ -3,4 +3,14 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_menu">Menu</string>
     <string name="title_activity_chefs">Chefs</string>
+    <string name="title_activity_recommended_layout">RecommendedLayout</string>
+    <string name="LoginText">Log In</string>
+    <string name="Username">Username or Email</string>
+    <string name="Password">Password</string>
+    <string name="LoginButton">Log In</string>
+    <string name="text">Sign up with:</string>
+    <string name="FacebookButton">Facebook</string>
+    <string name="TwitterButton">Twitter</string>
+    <string name="GoogleButton">Google</string>
+
 </resources>
