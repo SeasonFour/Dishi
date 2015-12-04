@@ -3,7 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_menu">Menu</string>
     <string name="title_activity_chefs">Chefs</string>
-    <string name="title_activity_recommended_layout">RecommendedLayout</string>
+    <string name="title_activity_recommended_layout">Recommended</string>
     <string name="LoginText">Log In</string>
     <string name="Username">Username or Email</string>
     <string name="Password">Password</string>
