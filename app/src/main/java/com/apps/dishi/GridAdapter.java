@@ -30,27 +30,27 @@ public class GridAdapter  extends RecyclerView.Adapter<GridAdapter.ViewHolder> {
 
         species = new EndangeredItem();
         species.setName("Black Rhino");
-        species.setThumbnail(R.drawable.rhino);
+        species.setThumbnail(R.drawable.leopard);
         mItems.add(species);
 
         species = new EndangeredItem();
         species.setName("Orangutan");
-        species.setThumbnail(R.drawable.orangutan);
+        species.setThumbnail(R.drawable.leopard);
         mItems.add(species);
 
         species = new EndangeredItem();
         species.setName("Sea Lions");
-        species.setThumbnail(R.drawable.seali);
+        species.setThumbnail(R.drawable.leopard);
         mItems.add(species);
 
         species = new EndangeredItem();
         species.setName("Indian Elephant");
-        species.setThumbnail(R.drawable.elephant);
+        species.setThumbnail(R.drawable.leopard);
         mItems.add(species);
 
         species = new EndangeredItem();
         species.setName("Giant Panda");
-        species.setThumbnail(R.drawable.panda);
+        species.setThumbnail(R.drawable.leopard);
         mItems.add(species);
 
         species = new EndangeredItem();
