@@ -50,9 +50,9 @@
         android:layout_height="wrap_content"
         android:text="@string/text"
         android:id="@+id/textView2"
+        android:layout_marginTop="16dp"
         android:layout_below="@+id/LoginButton"
-        android:layout_alignEnd="@+id/editText2"
-        android:layout_marginTop="17dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="200dp"
