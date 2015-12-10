@@ -19,7 +19,18 @@ android {
         }
     }
     sourceSets {
-        main { java.srcDirs = ['src/main/java', 'src/main/java/com/apps/dishi/recommended'] }
+        main {
+            java.srcDirs = [
+                'src/main/java',
+                'src/main/java/com/apps/dishi/recommended']
+
+            res.srcDirs = [
+                    'src/main/res/layout/chefs',
+                    'src/main/res/layout/menu',
+                    'src/main/res/layout/recommended',
+                    'src/main/res/layout',
+                    'src/main/res']
+        }
     }
 }
 
