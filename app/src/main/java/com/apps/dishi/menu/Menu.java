@@ -29,12 +29,12 @@ public class Menu extends Activity implements View.OnClickListener {
         ToRecommend.setOnClickListener(this);
     }
 
-    private void toChefsClick ()
+    private void MenutoChefsClick ()
     {
         Intent a = new Intent(Menu.this, Chefs.class);
         startActivity(a);
     }
-    private void toRecommendedLayoutClick ()
+    private void MenutoRecommendedLayoutClick ()
     {
         Intent b = new Intent(Menu.this, RecommendedLayout.class);
         startActivity(b);
@@ -44,11 +44,11 @@ public class Menu extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.menu_to_chefs:
-                toChefsClick();
+                MenutoChefsClick();
                 break;
 
             case R.id.menu_to_recommend:
-                toRecommendedLayoutClick();
+                MenutoRecommendedLayoutClick();
                 break;
         }
     }

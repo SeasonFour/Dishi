@@ -1,7 +1,5 @@
 package com.apps.dishi;
 
-import com.apps.dishi.recommended.Test;
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;

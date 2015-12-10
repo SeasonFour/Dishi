@@ -6,68 +6,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_recommended_layout"
-    tools:context=".RecommendedLayout">
+    tools:context="com.apps.dishi.recommend.RecommendedLayout">
 
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/RecommendedScrollView"
-        android:layout_alignParentBottom="true">
+    <!--<ScrollView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:id="@+id/RecommendedScrollView"-->
+        <!--android:layout_alignParentBottom="true">-->
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:padding="10dp">
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:padding="10dp">-->
 
-            <ImageView
-                android:layout_width="155dp"
-                android:layout_height="150dp"
-                android:id="@+id/imageView"
-                android:background="@drawable/macoroni"
-                android:layout_marginEnd="10dp"
-                android:layout_alignParentTop="true"
-                android:layout_toStartOf="@+id/imageView2"
-                android:layout_marginBottom="10dp"/>
+            <!--<ImageView-->
+                <!--android:layout_width="155dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:id="@+id/imageView"-->
+                <!--android:background="@drawable/macoroni"-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_toStartOf="@+id/imageView2"-->
+                <!--android:layout_marginBottom="10dp"/>-->
 
-            <ImageView
-                android:layout_width="155dp"
-                android:layout_height="200dp"
-                android:id="@+id/imageView2"
-                android:layout_marginEnd="10dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:background="@drawable/juice"
-                android:layout_marginBottom="10dp"/>
+            <!--<ImageView-->
+                <!--android:layout_width="155dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:id="@+id/imageView2"-->
+                <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:background="@drawable/juice"-->
+                <!--android:layout_marginBottom="10dp"/>-->
 
-            <ImageView
-                android:layout_width="155dp"
-                android:layout_height="200dp"
-                android:id="@+id/imageView3"
-                android:background="@drawable/mintchoc"
-                android:layout_centerVertical="true"
-                android:layout_alignStart="@+id/imageView"
-                android:layout_below="@+id/imageView"
-                android:layout_marginBottom="10dp"/>
+            <!--<ImageView-->
+                <!--android:layout_width="155dp"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:id="@+id/imageView3"-->
+                <!--android:background="@drawable/mintchoc"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_alignStart="@+id/imageView"-->
+                <!--android:layout_below="@+id/imageView"-->
+                <!--android:layout_marginBottom="10dp"/>-->
 
-            <ImageView
-                android:layout_width="155dp"
-                android:layout_height="150dp"
-                android:id="@+id/imageView4"
-                android:background="@drawable/chickenpasta"
-                android:layout_alignBottom="@+id/imageView3"
-                android:layout_alignStart="@+id/imageView2"/>
-        </RelativeLayout>
-    </ScrollView>
+            <!--<ImageView-->
+                <!--android:layout_width="155dp"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:id="@+id/imageView4"-->
+                <!--android:background="@drawable/chickenpasta"-->
+                <!--android:layout_alignBottom="@+id/imageView3"-->
+                <!--android:layout_alignStart="@+id/imageView2"/>-->
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="To Menu"
         android:id="@+id/recommend_to_menu"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="59dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="50dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true" />
 
@@ -76,7 +75,7 @@
         android:layout_height="wrap_content"
         android:text="To Chefs"
         android:id="@+id/recommend_to_chefs"
-        android:layout_marginEnd="58dp"
+        android:layout_marginEnd="55dp"
         android:layout_alignTop="@+id/recommend_to_menu"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>
