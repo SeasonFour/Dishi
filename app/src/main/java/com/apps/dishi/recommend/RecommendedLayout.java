@@ -1,4 +1,4 @@
-package com.apps.dishi;
+package com.apps.dishi.recommend;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+
+import com.apps.dishi.R;
 
 public class RecommendedLayout extends Activity {
 

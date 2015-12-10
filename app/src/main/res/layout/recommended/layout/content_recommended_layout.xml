@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_recommended_layout"
-    tools:context="com.apps.dishi.RecommendedLayout">
+    tools:context=".RecommendedLayout">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -60,4 +60,23 @@
                 android:layout_alignStart="@+id/imageView2"/>
         </RelativeLayout>
     </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Menu"
+        android:id="@+id/recommend_to_menu"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Chefs"
+        android:id="@+id/recommend_to_chefs"
+        android:layout_marginEnd="58dp"
+        android:layout_alignTop="@+id/recommend_to_menu"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
