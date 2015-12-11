@@ -10,9 +10,9 @@
         android:theme="@style/MaterialLight" >
 
         <activity
-            android:name=".recommend.Recommended"
+            android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/MaterialLight" >
+            android:theme="@style/AppTheme.Material" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,10 +21,16 @@
         </activity>
 
         <activity
+            android:name=".recommend.Recommended"
+            android:label="@string/app_name"
+            android:theme="@style/MaterialLight" >
+
+        </activity>
+
+        <activity
             android:name=".recommend.RecommendedLayout"
             android:label="@string/title_activity_recommended_layout"
             android:theme="@style/MaterialLight" >
-
         </activity>
 
         <activity
@@ -32,6 +38,7 @@
             android:label="@string/title_activity_menu">
 
         </activity>
+
         <activity
             android:name=".chefs.Chefs"
             android:label="@string/title_activity_chefs">

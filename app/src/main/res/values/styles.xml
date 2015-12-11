@@ -14,6 +14,9 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <!--An appcompat similar to the material one-->
+    <style name="AppTheme.Material" parent="Theme.AppCompat.Light" />
+
 
 
     <!--Material Design Theme-->
