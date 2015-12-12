@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.apps.dishi" >
+    package="com.apps.dishi">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <meta-data
+        android:name="com.parse.APPLICATION_ID"
+        android:value="@string/parse_app_id" />
+    <meta-data
+        android:name="com.parse.CLIENT_KEY"
+        android:value="@string/parse_client_key" />
 
     <application
+        android:name=".MealSpottingApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/MaterialLight" >
+        android:theme="@style/MaterialLight">
 
         <activity
             android:name=".UserMainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.Material" >
+            android:theme="@style/AppTheme.Material">
+        </activity>
+
+        <activity
+            android:name=".useraccount.MealListActivity"
+            android:label="The Meals">
+        </activity>
+
+        <activity
+            android:name=".chefside.NewMealActivity"
+            />
+
+        <activity
+            android:name=".useraccount.UserLogin"
+            android:label="@string/app_name"
+            android:theme="@style/MaterialLight" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,31 +49,19 @@
         </activity>
 
         <activity
-            android:name=".reco"
-            android:label="@string/app_name"
-            android:theme="@style/MaterialLight" >
-
-        </activity>
-
-        <activity
-            android:name=".userSide.recommend.RecommendedLayout"
+            android:name=".recommend.RecommendedLayout"
             android:label="@string/title_activity_recommended_layout"
-            android:theme="@style/MaterialLight" >
-        </activity>
-
+            android:theme="@style/MaterialLight" />
         <activity
-            android:name=".userSide.menu.Menu"
-            android:label="@string/title_activity_menu">
-
-        </activity>
-
+            android:name=".menu.Menu"
+            android:label="@string/title_activity_menu" />
         <activity
-            android:name=".userSide.chefs.Chefs"
-            android:label="@string/title_activity_chefs">
-
+            android:name=".chefs.Chefs"
+            android:label="@string/title_activity_chefs" />
+        <activity
+            android:name=".useraccount.Favourites"
+            android:label="@string/title_activity_favourites">
         </activity>
-
     </application>
 
 </manifest>
-

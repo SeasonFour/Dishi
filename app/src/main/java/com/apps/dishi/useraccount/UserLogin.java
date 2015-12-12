@@ -1,4 +1,4 @@
-package com.apps.dishi.recommend;
+package com.apps.dishi.useraccount;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.apps.dishi.R;
 
-public class Recommended extends Activity implements View.OnClickListener {
+public class UserLogin extends Activity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class Recommended extends Activity implements View.OnClickListener {
 
     private void toRecommendedLayoutClick ()
     {
-        Intent a = new Intent(Recommended.this, RecommendedLayout.class);
+        Intent a = new Intent(UserLogin.this, MealListActivity.class);
         startActivity(a);
     }
     @Override

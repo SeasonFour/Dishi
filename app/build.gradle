@@ -11,6 +11,8 @@ android {
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -28,6 +30,7 @@ android {
                     'src/main/res/layout/user_side/layout/chefs',
                     'src/main/res/layout/user_side/layout/menu',
                     'src/main/res/layout/user_side/layout/recommended',
+                    'src/main/res/layout/user_side/layout/useraccount',
                     'src/main/res/layout/user_side',
                     'src/main/res/layout/chef_side',
                     'src/main/res']
@@ -42,6 +45,10 @@ dependencies {
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:recyclerview-v7:23.1.1'
     compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.parse.bolts:bolts-tasks:1.3.0'
+    // Module dependency on ParseUI libraries sources
+    compile 'com.parse:parseui-login-android:0.0.1'
+    compile 'com.parse:parseui-widget-android:0.0.1'
 
 }
 

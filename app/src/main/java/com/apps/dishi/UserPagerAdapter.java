@@ -4,9 +4,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.apps.dishi.userSide.chefs.ChefFragment;
-import com.apps.dishi.userSide.menu.MenuFragment;
-import com.apps.dishi.userSide.recommend.RecommendFragment;
+import com.apps.dishi.chefs.ChefFragment;
+import com.apps.dishi.menu.MenuFragment;
+import com.apps.dishi.recommend.RecommendFragment;
+
 
 public class UserPagerAdapter extends FragmentStatePagerAdapter {
     int mnumOfTabs;

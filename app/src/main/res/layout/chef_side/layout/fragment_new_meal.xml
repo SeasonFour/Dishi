@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/meal_label"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:id="@+id/meal_name_text" />
+
+    <EditText
+        android:id="@+id/meal_name"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="textMultiLine"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/rating_spinner"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/meal_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp" />
+
+    <com.parse.ParseImageView
+        android:id="@+id/meal_preview_image"
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/rating_spinner"
+        android:layout_centerHorizontal="true"
+        android:background="#cccaca"
+        android:layout_marginBottom="10dp"/>
+
+
+    <ImageButton
+        android:id="@+id/photo_button"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_action_photo"
+        android:layout_below="@+id/meal_preview_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/save_button_text"
+        android:layout_below="@+id/photo_button"
+        android:layout_toStartOf="@+id/photo_button" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="@string/cancel_button_text"
+        android:layout_alignTop="@+id/save_button"
+        android:layout_toEndOf="@+id/photo_button" />
+
+
+</RelativeLayout>
