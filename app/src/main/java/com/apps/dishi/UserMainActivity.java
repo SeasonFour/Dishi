@@ -7,11 +7,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
 
-public class MainActivity extends AppCompatActivity {
+public class UserMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_tab);
+        setContentView(R.layout.user_side_main);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Recommended"));
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final PagerAdapter adapter = new PagerAdapter
+        final UserPagerAdapter adapter = new UserPagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
                 viewPager.setAdapter(adapter);
                 viewPager.addOnPageChangeListener(

@@ -10,7 +10,7 @@
         android:theme="@style/MaterialLight" >
 
         <activity
-            android:name=".MainActivity"
+            android:name=".UserMainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.Material" >
             <intent-filter>
@@ -21,26 +21,26 @@
         </activity>
 
         <activity
-            android:name=".recommend.Recommended"
+            android:name=".reco"
             android:label="@string/app_name"
             android:theme="@style/MaterialLight" >
 
         </activity>
 
         <activity
-            android:name=".recommend.RecommendedLayout"
+            android:name=".userSide.recommend.RecommendedLayout"
             android:label="@string/title_activity_recommended_layout"
             android:theme="@style/MaterialLight" >
         </activity>
 
         <activity
-            android:name=".menu.Menu"
+            android:name=".userSide.menu.Menu"
             android:label="@string/title_activity_menu">
 
         </activity>
 
         <activity
-            android:name=".chefs.Chefs"
+            android:name=".userSide.chefs.Chefs"
             android:label="@string/title_activity_chefs">
 
         </activity>
