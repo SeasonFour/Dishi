@@ -16,21 +16,4 @@
         android:textSize="30dp"
         android:text="Menu Fragment"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To Recommended"
-        android:id="@+id/menu_to_recommend"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To Chefs"
-        android:id="@+id/menu_to_chefs"
-        android:layout_marginTop="70dp"
-        android:layout_below="@+id/menu_to_recommend"
-        android:layout_centerHorizontal="true" />
 </RelativeLayout>
