@@ -3,7 +3,9 @@
     package="com.apps.dishi">
 
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -23,23 +25,7 @@
         android:theme="@style/MaterialLight">
 
         <activity
-            android:name=".UserMainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.Material">
-        </activity>
-
-        <activity
-            android:name=".useraccount.MealListActivity"
-            android:label="The Meals">
-        </activity>
-
-        <activity
-            android:name=".chefside.NewMealActivity"
-            />
-
-        <activity
-            android:name=".useraccount.UserLogin"
-            android:label="@string/app_name"
+            android:name=".TypeOfUser"
             android:theme="@style/MaterialLight" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,6 +33,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".chefside.ChefLogin"
+            android:label="@string/app_name"
+            android:theme="@style/MaterialLight">
+        </activity>
+
+        <activity
+            android:name=".UserLogin"
+            android:label="@string/app_name"
+            android:theme="@style/MaterialLight">
+        </activity>
+
+        <activity
+            android:name=".UserMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Material" />
+        <activity
+            android:name=".useraccount.MealListActivity"
+            android:label="The Meals" />
+        <activity android:name=".chefside.NewMealActivity" />
 
         <activity
             android:name=".recommend.RecommendedLayout"
@@ -60,8 +67,8 @@
             android:label="@string/title_activity_chefs" />
         <activity
             android:name=".useraccount.Favourites"
-            android:label="@string/title_activity_favourites">
-        </activity>
+            android:label="@string/title_activity_favourites" />
     </application>
+
 
 </manifest>
