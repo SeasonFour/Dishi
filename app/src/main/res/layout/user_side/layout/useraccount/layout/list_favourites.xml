@@ -17,7 +17,7 @@
                 android:layout_margin="3dp">
 
                 <com.parse.ParseImageView
-                    android:id="@+id/icon"
+                    android:id="@+id/food_icon"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_margin="5dp"
@@ -30,8 +30,8 @@
                     android:gravity="left"
                     android:text="title"
                     android:textSize="20sp"
-                    android:layout_alignTop="@+id/icon"
-                    android:layout_toEndOf="@+id/icon"
+                    android:layout_alignTop="@+id/food_icon"
+                    android:layout_toEndOf="@+id/food_icon"
                     android:layout_marginStart="5dp"
                     android:padding="2dp"/>
 
@@ -49,7 +49,7 @@
                     android:layout_height="60dp"
                     android:text="description"
                     android:textSize="15sp"
-                    android:layout_alignBottom="@+id/icon"
+                    android:layout_alignBottom="@+id/food_icon"
                     android:layout_alignStart="@+id/title"
                     android:padding="2dp"/>
 

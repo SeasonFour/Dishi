@@ -32,7 +32,7 @@ public class UserLogin extends Activity implements View.OnClickListener {
 
     private void toRecommendedLayoutClick ()
     {
-        Intent a = new Intent(UserLogin.this, MealListActivity.class);
+        Intent a = new Intent(this, UserMainActivity.class);
         startActivity(a);
     }
     @Override

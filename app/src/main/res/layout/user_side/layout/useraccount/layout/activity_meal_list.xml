@@ -9,4 +9,23 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.package com.apps.dishi.useraccount.MealListActivity">
 
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/image_template"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Meal Name"
+        android:id="@+id/meal_name"
+        android:textSize="18sp"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image_template" />
+
 </RelativeLayout>
