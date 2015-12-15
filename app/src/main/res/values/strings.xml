@@ -55,6 +55,7 @@
     <string name="login_signup">log-in/sign-up</string>
     <string name="register">Register</string>
     <string name="profile_title">Profile</string>
+    <string name="follow_chef_button">Follow</string>
 
 
 </resources>

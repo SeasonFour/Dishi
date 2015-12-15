@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -27,8 +26,7 @@
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:clickable="true" />
+                android:layout_marginEnd="10dp"/>
 
             <TextView
                 android:id="@+id/chef_name"
@@ -61,6 +59,8 @@
                 android:layout_below="@+id/chef_fav_dish"
                 android:layout_alignStart="@+id/chef_fav_dish"
                 android:layout_marginEnd="5dp"/>
+
+
 
             <Button
                 android:id="@+id/follow_chef_button"
