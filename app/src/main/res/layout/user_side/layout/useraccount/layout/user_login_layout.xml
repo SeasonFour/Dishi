@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".userSide.recommend.Recommended">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/use_login_toolbar"
+        app:contentInsetStart="0dp"
+        style="@style/Toolbar"
+        android:background="@color/guillotine_background_dark_grey">
+
+        <com.apps.dishi.widgets.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login_signup"
+            android:textAllCaps="true"
+            android:textSize="@dimen/guillotine_item_text_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:textColor="#fff"/>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LoginText"
+            android:id="@+id/eater_login_signup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/eater_username"
+            android:text="@string/Username"
+            android:textSize="15sp"
+            android:layout_below="@+id/eater_login_signup"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:text="@string/Password"
+            android:layout_below="@+id/eater_username"
+            android:layout_centerHorizontal="true"
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/LoginButton"
+            android:id="@+id/eater_login_button"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sign_up_text"
+            android:id="@+id/eater_sign_up_text"
+            android:layout_below="@+id/eater_login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/FacebookButton"
+            android:id="@+id/eater_facebook_button"
+            android:layout_below="@+id/eater_sign_up_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/TwitterButton"
+            android:id="@+id/eater_twitter_button"
+            android:layout_below="@+id/eater_facebook_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/GoogleButton"
+            android:id="@+id/eater_google_button"
+            android:layout_below="@+id/eater_twitter_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

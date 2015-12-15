@@ -49,7 +49,7 @@ public class FavoriteMealAdapter extends ParseQueryAdapter<Meal> {
 
         super.getItemView(meal, v, parent);
 
-        ParseImageView mealImage = (ParseImageView) v.findViewById(R.id.icon);
+        ParseImageView mealImage = (ParseImageView) v.findViewById(R.id.food_icon);
         ParseFile photoFile = meal.getParseFile("photo");
         if (photoFile != null) {
             mealImage.setParseFile(photoFile);

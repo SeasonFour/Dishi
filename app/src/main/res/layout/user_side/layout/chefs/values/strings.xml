@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_activity_type_of_user">Sign Up As</string>
+    <string name="title_activity_user_profile">UserProfileActivity</string>
+    <string name="title_activity_user_settings">UserSettingsActivity</string>
+</resources>

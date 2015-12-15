@@ -3,4 +3,15 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <!--Guillotine Colors -->
+    <!--The navy blues-->
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+    <!--The greys-->
+    <color name="guillotine_background_dark_grey">#FF616161</color>
+    <color name="guillotine_background_grey">#FF757575</color>
+    <color name="guillotine_background_light_grey">#FFC4C4C5</color>
+    <color name="primary_material_light">#757575</color>
 </resources>

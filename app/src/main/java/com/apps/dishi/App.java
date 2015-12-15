@@ -1,6 +1,7 @@
 package com.apps.dishi;
 
 import android.app.Application;
+import android.graphics.Typeface;
 
 import com.apps.dishi.useraccount.Meal;
 import com.parse.Parse;
@@ -12,14 +13,20 @@ import com.parse.ParseUser;
  * Created by djmosi on 12/10/15.
  */
 
-public class MealSpottingApplication extends Application {
+public class App extends Application {
+
+//    Custom TextType
+    private static final String CANARO_EXTRA_BOLD_PATH = "fonts/canaro_extra_bold.otf";
+    public static Typeface canaroExtraBold;
 
     @Override
     public void onCreate() {
         super.onCreate();
+        initTypeface();
 
-		/*
-		 * In this tutorial, we'll subclass ParseObject for convenience to
+        // PARSE STUFF
+
+		 /* In this tutorial, we'll subclass ParseObject for convenience to
 		 * create and modify Meal objects
 		 */
         ParseObject.registerSubclass(Meal.class);
@@ -30,7 +37,7 @@ public class MealSpottingApplication extends Application {
 
 
         Parse.initialize(this, "WxujS9RrPupa3pwCrM3CuV3N2wVFGQqKK11JxFSD", "71ztokocp0R578T2NmmfjlGDlLkMvT6KQqb9Xvhi");
-//        Parse.enableLocalDatastore(this);
+        //        Parse.enableLocalDatastore(this);
 		/*
 		 * This app lets an anonymous user create and save photos of meals
 		 * they've eaten. An anonymous user is a user that can be created
@@ -59,6 +66,12 @@ public class MealSpottingApplication extends Application {
         defaultACL.setPublicReadAccess(true);
 
         ParseACL.setDefaultACL(defaultACL, true);
+
+    }
+
+    private void initTypeface() {
+        canaroExtraBold = Typeface.createFromAsset(getAssets(), CANARO_EXTRA_BOLD_PATH);
+
     }
 
 }

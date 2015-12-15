@@ -36,6 +36,12 @@ android {
                     'src/main/res']
         }
     }
+    dexOptions {
+        incremental true
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
 }
 
 dependencies {
@@ -49,6 +55,8 @@ dependencies {
     // Module dependency on ParseUI libraries sources
     compile 'com.parse:parseui-login-android:0.0.1'
     compile 'com.parse:parseui-widget-android:0.0.1'
-
+    //guillotine menu
+    compile 'com.jakewharton:butterknife:6.1.0'
+    compile project(':guillotine')
 }
 
