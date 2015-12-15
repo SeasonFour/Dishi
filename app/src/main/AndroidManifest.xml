@@ -22,14 +22,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/MaterialLight">
+        android:theme="@style/Material.NoActionBar">
         <uses-library
             android:name="com.yalantis.guillotine"
             android:required="false" />
 
         <activity
-            android:name=".TypeOfUser"
-            android:theme="@style/MaterialLight">
+            android:name=".TypeOfUser">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -45,11 +44,15 @@
         <activity
             android:name=".UserMainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.Material.NoBar" />
+            android:theme="@style/AppTheme.Material.NoBar"
+            />
         <activity
             android:name=".useraccount.MealListActivity"
-            android:label="The Meals" />
+            android:label="The Meals"
+            android:theme="@style/MaterialLight"/>
+
         <activity android:name=".chefside.NewMealActivity" />
+
         <activity
             android:name=".recommend.RecommendedLayout"
             android:label="@string/title_activity_recommended_layout"

@@ -52,6 +52,9 @@
     <string name="chef_register_text">Register as a Dishi Chef</string>
     <string name="chef_register_button">register</string>
     <string name="app_name_caps">DISHI</string>
+    <string name="login_signup">log-in/sign-up</string>
+    <string name="register">Register</string>
+    <string name="profile_title">Profile</string>
 
 
 </resources>
