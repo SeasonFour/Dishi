@@ -1,14 +1,30 @@
 <resources>
-    <!--APP STRINGS-->
+    <!--GENERAL APP STRINGS-->
     <string name="app_name">Dishi</string>
     <string name="action_settings">Settings</string>
+
+    <!--KEYS-->
+    <!--Parse-->
+    <string name="parse_app_id">WxujS9RrPupa3pwCrM3CuV3N2wVFGQqKK11JxFSD</string>
+    <string name="parse_client_key">71ztokocp0R578T2NmmfjlGDlLkMvT6KQqb9Xvhi</string>
+
+
+    <!--CHOICE OF USER-->
+    <string name="eater_login_button">Eater</string>
+    <string name="chef_login_button">Food Maker</string>
+
+    <!--USER ACCOUNT STRINGS-->
+    <string name="title_activity_new_meal">NewMeal</string>
+    <string name="title_activity_favourites">Favourites</string>
     <string name="title_activity_menu">Menu</string>
     <string name="title_activity_chefs">Chefs</string>
     <string name="title_activity_recommended_layout">Recommended</string>
 
-    <!--Parse-->
-    <string name="parse_app_id">WxujS9RrPupa3pwCrM3CuV3N2wVFGQqKK11JxFSD</string>
-    <string name="parse_client_key">71ztokocp0R578T2NmmfjlGDlLkMvT6KQqb9Xvhi</string>
+    <!--User Guillotine Strings-->
+    <string name="user_guillotine_home">Home</string>
+    <string name="user_guillotine_profile">Profile</string>
+    <string name="user_guillotine_settings">Settings</string>
+
 
     <!--Recommended Login page-->
     <string name="LoginText">Login or Register as a Dishi Eater</string>
@@ -21,12 +37,6 @@
     <string name="GoogleButton">Google</string>
 
 
-    <!--USER ACCOUNT STRINGS-->
-    <string name="title_activity_new_meal">NewMeal</string>
-    <string name="title_activity_favourites">Favourites</string>
-    <string name="eater_login_button">Eater</string>
-    <string name="chef_login_button">Food Maker</string>
-
     <!--Rating Strings-->
     <string-array name="ratings_array">
         <item>5</item>
@@ -35,12 +45,13 @@
         <item>2</item>
         <item>1</item>
     </string-array>
+
+
+    <!--CHEF'S SIDE OF THINGS-->
     <string name="title_activity_chef_login">Chef Login</string>
     <string name="chef_register_text">Register as a Dishi Chef</string>
     <string name="chef_register_button">register</string>
-
-    <!--CHEF SIDE ACCOUNT STRINGS-->
-
+    <string name="app_name_caps">DISHI</string>
 
 
 </resources>
