@@ -4,14 +4,38 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <!--Guillotine Colors -->
+    <!--Old Guillotine Colors -->
     <!--The navy blues-->
-    <color name="guillotine_background">#444153</color>
-    <color name="guillotine_background_dark">#383547</color>
-    <color name="selected_item_color">#30d1d5</color>
+    <!--<color name="guillotine_background">#444153</color>-->
+    <!--<color name="guillotine_background_dark">#383547</color>-->
+    <!--<color name="selected_item_color">#30d1d5</color>-->
     <!--The greys-->
     <color name="guillotine_background_dark_grey">#FF616161</color>
     <color name="guillotine_background_grey">#FF757575</color>
     <color name="guillotine_background_light_grey">#FFC4C4C5</color>
     <color name="primary_material_light">#757575</color>
+
+
+    <!--NEW Guillotine Colors -->
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+
+
+    <!--THEME COLORS-->
+    <color name="pink">#e56565</color>
+    <color name="mustard">#d59848</color>
+    <color name="green">#43c2ad</color>
+    <color name="red">#e56565</color>
+    <color name="dark_mustard">#e4784a</color>
+    <color name="light_cream">#ffe9c0</color>
+    <color name="teal">#00b7c9</color>
+    <color name="orange">#FF9900</color>
+    <color name="puke">#d5e1cb</color>
+
+
+
+
+
+
 </resources>

@@ -7,23 +7,24 @@
     android:layout_height="match_parent">
 
 
-    <View
-        android:layout_gravity="top"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/guillotine_actionbar_background_view_height"
-        android:background="@color/guillotine_background_grey"
-        />
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <View
+            android:id="@+id/chef_details_view"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:background="@color/mustard"
+            android:layout_height="@dimen/guillotine_actionbar_background_view_height"
+            />
+
         <android.support.v7.widget.Toolbar
             android:id="@+id/chef_details_guillotine_toolbar"
             app:contentInsetStart="0dp"
             style="@style/Toolbar"
-            android:background="@color/guillotine_background_dark_grey">
+            android:layout_below="@id/chef_details_view">
 
             <ImageView
                 android:id="@+id/content_hamburger"
@@ -53,10 +54,11 @@
 
         <android.support.design.widget.TabLayout
             android:id="@+id/chef_tab_layout"
+            style="@style/TabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="220dp"
-            android:background="@color/guillotine_background_dark_grey"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/chef_image"
             android:minHeight="?attr/actionBarSize"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
@@ -64,9 +66,8 @@
             android:id="@+id/chef_content_pager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/chef_details_guillotine_toolbar"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="165dp" />
+            android:layout_below="@+id/chef_tab_layout"
+            android:layout_alignParentStart="true"/>
 
 
 

@@ -5,4 +5,19 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+    <!--Material Design Theme-->
+    <style name="Material" parent="android:Theme.Material">
+        <!-- Main theme colors -->
+        <!--   your app branding color for the app bar -->
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MaterialLight" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimary">@color/guillotine_background_dark_grey</item>
+        <item name="android:colorPrimaryDark">@color/guillotine_background_dark_grey</item>
+    </style>
+    <style name="Material.NoActionBar" parent="android:Theme.Material.Light.NoActionBar"/>
 </resources>

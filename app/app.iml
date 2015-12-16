@@ -21,7 +21,7 @@
         <option name="ALLOW_USER_CONFIGURATION" value="false" />
         <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
         <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res/layout/user_side/layout/chefs" />
-        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/main/res/layout/chef_side;file://$MODULE_DIR$/src/main/res/layout/user_side/layout/recommended;file://$MODULE_DIR$/src/main/res/layout/user_side/layout/useraccount;file://$MODULE_DIR$/src/main/res/layout/user_side/layout/menu;file://$MODULE_DIR$/src/main/res/layout/user_side;file://$MODULE_DIR$/src/main/res/layout/user_side/layout/chefs" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res/layout/user_side/layout/useraccount;file://$MODULE_DIR$/src/main/res/layout/user_side/layout/menu;file://$MODULE_DIR$/src/main/res/layout/chef_side;file://$MODULE_DIR$/src/main/res/layout/user_side/layout/chefs;file://$MODULE_DIR$/src/main/res/layout/user_side;file://$MODULE_DIR$/src/main/res;file://$MODULE_DIR$/src/main/res/layout/user_side/layout/recommended" />
         <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
       </configuration>
     </facet>

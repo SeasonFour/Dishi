@@ -22,62 +22,64 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Material.NoActionBar">
+        android:theme="@style/Dishi.AppTheme.NoBar">
         <uses-library
             android:name="com.yalantis.guillotine"
             android:required="false" />
 
-        <activity android:name=".TypeOfUser">
+        <activity
+            android:name=".TypeOfUser"
+            android:theme="@style/Dishi.AppTheme.NoBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".chefside.ChefLogin"
             android:label="@string/app_name" />
+
         <activity
             android:name=".UserLogin"
             android:label="@string/app_name" />
+
         <activity
             android:name=".UserMainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.Material.NoBar" />
+            android:theme="@style/Dishi.AppTheme.NoBar" />
+
         <activity
             android:name=".useraccount.MealListActivity"
             android:label="The Meals"
-            android:theme="@style/MaterialLight" />
+            android:theme="@style/DishiBar" />
+
         <activity android:name=".chefside.NewMealActivity" />
         <activity
             android:name=".recommend.RecommendedLayout"
             android:label="@string/title_activity_recommended_layout"
-            android:theme="@style/MaterialLight" />
+            android:theme="@style/DishiBar" />
+
         <activity
             android:name=".menu.Menu"
             android:label="@string/title_activity_menu" />
         <activity
             android:name=".chefs.Chefs"
-            android:label="@string/title_activity_chefs" />
+            android:label="@string/title_activity_chefs"
+            android:theme="@style/Dishi.AppTheme.NoBar"/>
         <activity
             android:name=".useraccount.Favourites"
             android:label="@string/title_activity_favourites" />
         <activity
             android:name=".useraccount.UserProfileActivity"
             android:label="@string/title_activity_user_profile"
-            android:theme="@style/AppTheme.Material.NoBar" />
+            android:theme="@style/Dishi.AppTheme.NoBar" />
         <activity
             android:name=".useraccount.UserSettingsActivity"
             android:label="@string/title_activity_user_settings"
-            android:theme="@style/AppTheme.Material.NoBar" />
-        <activity
-            android:name=".chefs.ChefAboutFragment"
-            android:label="@string/title_activity_chef_about_fragment"
-            android:theme="@style/Material.NoActionBar" />
-        <activity
-            android:name=".chefs.ChefDishesFragment"
-            android:label="@string/title_activity_chef_dishes_fragment"
-            android:theme="@style/Material.NoActionBar"></activity>
+            android:theme="@style/Dishi.AppTheme.NoBar" />
+
     </application>
 
 </manifest>

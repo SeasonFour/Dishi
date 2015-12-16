@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/tools">
 
     <!-- Base application theme (AppCompat) -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -20,28 +20,99 @@
         <item name="android:colorPrimaryDark">@color/guillotine_background_dark_grey</item>
     </style>
 
-    <style name="AppTheme.Material.NoBar" parent="Theme.AppCompat.Light.NoActionBar" />
-
-
-
-
-    <!--Material Design Theme-->
-    <style name="Material" parent="android:Theme.Material">
-        <!-- Main theme colors -->
-        <!--   your app branding color for the app bar -->
-        <item name="android:colorPrimary">@color/colorPrimary</item>
-        <!--   theme UI controls like checkboxes and text fields -->
-        <item name="android:colorAccent">@color/colorAccent</item>
-    </style>
-
-    <style name="MaterialLight" parent="android:Theme.Material.Light">
-        <item name="android:colorPrimary">@color/guillotine_background_dark_grey</item>
+    <style name="AppTheme.Material.NoBar" parent="Theme.AppCompat.Light.NoActionBar" >
         <item name="android:colorPrimaryDark">@color/guillotine_background_dark_grey</item>
     </style>
-    <style name="Material.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
 
 
-    <!--GUILLOTINE MENU STYLES-->
+
+
+    <!--NEW THEME-->
+    <!--With Title Bar-->
+    <style name="DishiBar" parent="android:Theme.Material.Light">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="android:colorPrimaryDark">@color/mustard</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:windowBackground">@color/light_cream</item>
+        <item name="android:navigationBarColor">@color/mustard</item>
+        <item name="android:colorPrimary">@color/pink</item>
+    </style>
+
+    <style name="Dishi.AppTheme" parent="Theme.AppCompat.Light" >
+        <item name="colorPrimary">@color/pink</item>
+        <item name="android:colorPrimaryDark">@color/mustard</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:windowBackground">@color/light_cream</item>
+        <item name="android:navigationBarColor">@color/mustard</item>
+        <item name="colorPrimaryDark">@color/mustard</item>
+    </style>
+
+    <!--Without the title bar-->
+    <style name="Dishi" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">@color/mustard</item>
+        <item name="colorAccent">@color/green</item>
+        <item name="android:windowBackground">@color/light_cream</item>
+        <item name="android:navigationBarColor">@color/mustard</item>
+    </style>
+
+    <style name="Dishi.AppTheme.NoBar" parent="Dishi.AppTheme" >
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--Full Screen Theme-->
+    <style name="Dishi.Fullscreen" parent="Dishi">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Dishi.AppTheme.Fullscreen" parent="Dishi.AppTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--Other Custom Styles-->
+    <style name="TabLayout" >
+        <item name="android:background">@color/mustard</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:background">@color/red</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:radius">10dp</item>
+    </style>
+
+    <style name="Button2">
+        <item name="android:background">@color/orange</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Button3">
+        <item name="android:background">@color/teal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Button4">
+        <item name="android:background">@color/green</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="CardView1">
+        <item name="cardBackgroundColor">@color/pink</item>
+        <!-- Make the corners very round: -->
+        <item name="cardCornerRadius">18dp</item>
+    </style>
+
+
+
+
+
+    <!-- ORIGINAL GUILLOTINE MENU STYLES-->
     <style name="LinearLayout" />
 
     <style name="LinearLayout.GuillotineItem">
@@ -78,7 +149,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:minHeight">?attr/actionBarSize</item>
         <item name="android:windowNoTitle">true</item>
-        <item name="android:background">@color/guillotine_background</item>
+        <item name="android:background">@color/mustard</item>
     </style>
 
     <style name="ImageView" />

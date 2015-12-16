@@ -14,7 +14,7 @@
         android:id="@+id/use_login_toolbar"
         app:contentInsetStart="0dp"
         style="@style/Toolbar"
-        android:background="@color/guillotine_background_dark_grey">
+        >
 
         <com.apps.dishi.widgets.CanaroTextView
             android:layout_width="wrap_content"
@@ -72,48 +72,51 @@
             android:layout_marginBottom="5dp"/>
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/eater_login_button"
+            style="@style/Button2"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/LoginButton"
-            android:id="@+id/eater_login_button"
             android:layout_below="@+id/password"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"/>
 
         <TextView
+            android:id="@+id/eater_sign_up_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/Sign_up_text"
-            android:id="@+id/eater_sign_up_text"
             android:layout_below="@+id/eater_login_button"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="20dp"/>
 
         <Button
+            android:id="@+id/eater_facebook_button"
+            style="@style/Button4"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="@string/FacebookButton"
-            android:id="@+id/eater_facebook_button"
             android:layout_below="@+id/eater_sign_up_text"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp" />
 
         <Button
+            android:id="@+id/eater_twitter_button"
+            style="@style/Button3"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="@string/TwitterButton"
-            android:id="@+id/eater_twitter_button"
             android:layout_below="@+id/eater_facebook_button"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"/>
 
         <Button
+            android:id="@+id/eater_google_button"
+            style="@style/Button"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="@string/GoogleButton"
-            android:id="@+id/eater_google_button"
             android:layout_below="@+id/eater_twitter_button"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="10dp"/>
