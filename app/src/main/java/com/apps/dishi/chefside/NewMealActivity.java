@@ -28,7 +28,7 @@ public class NewMealActivity extends Activity {
 
         // Begin with main data entry view,
         // NewMealFragment
-        setContentView(R.layout.activity_new_meal);
+        setContentView(R.layout.new_meal);
         FragmentManager manager = getFragmentManager();
         Fragment fragment = manager.findFragmentById(R.id.fragmentContainer);
 

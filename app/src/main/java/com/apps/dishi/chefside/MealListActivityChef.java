@@ -1,41 +1,73 @@
 package com.apps.dishi.chefside;
 
 import android.app.Activity;
-import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ListView;
 
 import com.apps.dishi.R;
-import com.apps.dishi.userside.userprofile.FavoriteMealAdapter;
-import com.apps.dishi.data.Meal;
-import com.parse.ParseQueryAdapter;
 
-public class MealListActivityChef extends ListActivity {
+public class MealListActivityChef extends AppCompatActivity {
 
-    private ParseQueryAdapter<Meal> mainAdapter;
-    private FavoriteMealAdapter favoritesAdapter;
+    ListView listView;
+//    private ParseQueryAdapter mainAdapter;
+    private ChefListAdapter chefListAdapter;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getListView().setClickable(false);
+        setContentView(R.layout.chef_side_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.chef_menu_toolbar);
+        setSupportActionBar(toolbar);
 
-        mainAdapter = new ParseQueryAdapter<Meal>(this, Meal.class);
-        mainAdapter.setTextKey("title");
-        mainAdapter.setImageKey("photo");
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch (view.getId()) {
+                    case R.id.fab: {
+                        newMeal();
+                        break;
+                    }
+                }
 
-        // Subclass of ParseQueryAdapter
-        favoritesAdapter = new FavoriteMealAdapter(this);
+            }
+        });
 
-        // Default view is all meals
-        setListAdapter(mainAdapter);
+//        listView = (ListView) findViewById(R.id.chef_list);
+//        listView.setClickable(true);
+//
+//        mainAdapter = new ParseQueryAdapter<>(this, Meal.class, R.layout.chef_list_view);
+//        mainAdapter.setTextKey("title");
+//        mainAdapter.setImageKey("photo");
+//
+//        // Default view is all meals
+//        listView.setAdapter(mainAdapter);
+
+        //Using the custom adapter
+
+        chefListAdapter = new ChefListAdapter(this);
+        chefListAdapter.loadObjects();
+        listView = (ListView) findViewById(R.id.chef_list);
+        listView.setClickable(true);
+
+//        chefListAdapter.setTextKey("title");
+//        chefListAdapter.setImageKey("photo");
+
+        listView.setAdapter(chefListAdapter);
+
+
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.activity_meal_list, menu);
+        getMenuInflater().inflate(R.menu.chef_menu_layout, menu);
         return true;
     }
 
@@ -51,28 +83,13 @@ public class MealListActivityChef extends ListActivity {
                 updateMealList();
                 break;
             }
-
-            case R.id.action_favorites: {
-                showFavorites();
-                break;
-            }
-
-            case R.id.action_new: {
-                newMeal();
-                break;
-            }
         }
         return super.onOptionsItemSelected(item);
     }
 
     private void updateMealList() {
-        mainAdapter.loadObjects();
-        setListAdapter(mainAdapter);
-    }
-
-    private void showFavorites() {
-        favoritesAdapter.loadObjects();
-        setListAdapter(favoritesAdapter);
+        chefListAdapter.loadObjects();
+        listView.setAdapter(chefListAdapter);
     }
 
     private void newMeal() {

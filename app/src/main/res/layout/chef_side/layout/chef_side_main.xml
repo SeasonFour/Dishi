@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/root"
+    tools:context="chefside.MealListActivityChef">
 
-</LinearLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Dishi.AppTheme.AppBarOverlay">
+
+        <!--<View-->
+            <!--android:layout_gravity="top"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/guillotine_actionbar_background_view_height"-->
+            <!--android:background="@color/mustard"-->
+            <!--/>-->
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/chef_menu_toolbar"
+            app:contentInsetStart="0dp"
+            style="@style/Toolbar">
+
+            <ImageView
+                android:id="@+id/content_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu_90" />
+
+            <com.apps.dishi.widgets.CanaroTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textSize="@dimen/guillotine_item_text_size"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:textColor="#fff"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/chef_side_content"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@color/red"
+        android:tint="@color/white"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_new"
+        app:elevation="6dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+

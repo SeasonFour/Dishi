@@ -53,9 +53,17 @@
         <activity
             android:name=".userside.userprofile.MealListActivity"
             android:label="The Meals"
-            android:theme="@style/DishiBar" />
+            android:theme="@style/DishiBar"
+            />
+
+        <activity
+            android:name=".chefside.MealListActivityChef"
+            android:label=""/>
 
         <activity android:name=".chefside.NewMealActivity" />
+
+
+
         <activity
             android:name=".userside.recommend.RecommendedLayout"
             android:label="@string/title_activity_recommended_layout"

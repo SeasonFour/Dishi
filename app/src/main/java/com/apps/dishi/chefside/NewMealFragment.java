@@ -140,8 +140,7 @@ public class NewMealFragment extends Fragment {
      * When the user wants to add a photo, we'll start up a custom
      * CameraFragment that will let them take the photo and save it to the Meal
      * object owned by the NewMealActivity. Create a new CameraFragment, swap
-     * the contents of the fragmentContainer (see activity_new_meal.xml), then
-     * add the NewMealFragment to the back stack so we can return to it when the
+     * the contents of the fragmentContainer (see new_meal.xml    * add the NewMealFragment to the back stack so we can return to it when the
      * camera is finished.
      */
     public void startCamera() {

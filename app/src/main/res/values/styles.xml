@@ -32,25 +32,26 @@
     <style name="DishiBar" parent="android:Theme.Material.Light">
         <item name="colorPrimary">@color/pink</item>
         <item name="android:colorPrimaryDark">@color/mustard</item>
-        <item name="colorAccent">@color/green</item>
+        <item name="colorAccent">@color/pink</item>
         <item name="android:windowBackground">@color/light_cream</item>
         <item name="android:navigationBarColor">@color/mustard</item>
         <item name="android:colorPrimary">@color/pink</item>
     </style>
 
     <style name="Dishi.AppTheme" parent="Theme.AppCompat.Light" >
-        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimary">@color/mustard</item>
         <item name="android:colorPrimaryDark">@color/mustard</item>
-        <item name="colorAccent">@color/green</item>
+        <item name="colorAccent">@color/pink</item>
         <item name="android:windowBackground">@color/light_cream</item>
         <item name="android:navigationBarColor">@color/mustard</item>
         <item name="colorPrimaryDark">@color/mustard</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <!--Without the title bar-->
     <style name="Dishi" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:colorPrimaryDark">@color/mustard</item>
-        <item name="colorAccent">@color/green</item>
+        <item name="colorAccent">@color/pink</item>
         <item name="android:windowBackground">@color/light_cream</item>
         <item name="android:navigationBarColor">@color/mustard</item>
     </style>
@@ -74,6 +75,7 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
 
     <!--Other Custom Styles-->
     <style name="TabLayout" >
@@ -108,7 +110,15 @@
         <item name="cardCornerRadius">18dp</item>
     </style>
 
+    <!--FAB style-->
+    <style name="fab">
+        <item name="android:background">@color/red</item>
+    </style>
 
+
+    <style name="Dishi.AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/mustard</item>
+    </style>
 
 
 
