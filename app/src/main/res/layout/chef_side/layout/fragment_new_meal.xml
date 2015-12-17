@@ -3,12 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="10dp">
+    android:layout_marginTop="80dp"
+    android:padding="10dp">
 
     <TextView
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:text="@string/meal_label"
         android:textSize="15sp"
         android:layout_gravity="center"
@@ -34,7 +35,7 @@
 
     <com.parse.ParseImageView
         android:id="@+id/meal_preview_image"
-        android:layout_width="220dp"
+        android:layout_width="320dp"
         android:layout_height="200dp"
         android:layout_below="@+id/rating_spinner"
         android:layout_centerHorizontal="true"
@@ -43,9 +44,10 @@
 
 
     <ImageButton
+        style="@style/Button4"
         android:id="@+id/photo_button"
         android:layout_width="100dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:src="@drawable/ic_action_photo"
         android:layout_below="@+id/meal_preview_image"
         android:layout_centerHorizontal="true"

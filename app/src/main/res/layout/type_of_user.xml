@@ -38,13 +38,16 @@
 
         <Button
             android:id="@+id/eater_login"
-            style="@style/Button"
+            style="@style/ButtonRedBorder"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="@string/eater_login_button"
+            android:text="@string/eater_access_button"
+            android:typeface="normal"
             android:layout_above="@+id/chef_photo"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp" />
+            android:layout_marginBottom="30dp">
+
+        </Button>
 
         <ImageView
             android:layout_width="match_parent"
@@ -59,10 +62,10 @@
 
         <Button
             android:id="@+id/chef_login"
-            style="@style/Button2"
+            style="@style/ButtonMustardBorder"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="@string/chef_login_button"
+            android:text="@string/chef_access_button"
             android:layout_marginTop="30dp"
             android:layout_below="@+id/eater_photo"
             android:layout_alignStart="@+id/eater_login" />

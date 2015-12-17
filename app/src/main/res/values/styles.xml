@@ -32,7 +32,7 @@
     <style name="DishiBar" parent="android:Theme.Material.Light">
         <item name="colorPrimary">@color/pink</item>
         <item name="android:colorPrimaryDark">@color/mustard</item>
-        <item name="colorAccent">@color/pink</item>
+        <item name="colorAccent">@color/teal</item>
         <item name="android:windowBackground">@color/light_cream</item>
         <item name="android:navigationBarColor">@color/mustard</item>
         <item name="android:colorPrimary">@color/pink</item>
@@ -41,7 +41,7 @@
     <style name="Dishi.AppTheme" parent="Theme.AppCompat.Light" >
         <item name="colorPrimary">@color/mustard</item>
         <item name="android:colorPrimaryDark">@color/mustard</item>
-        <item name="colorAccent">@color/pink</item>
+        <item name="colorAccent">@color/teal</item>
         <item name="android:windowBackground">@color/light_cream</item>
         <item name="android:navigationBarColor">@color/mustard</item>
         <item name="colorPrimaryDark">@color/mustard</item>
@@ -51,7 +51,7 @@
     <!--Without the title bar-->
     <style name="Dishi" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:colorPrimaryDark">@color/mustard</item>
-        <item name="colorAccent">@color/pink</item>
+        <item name="colorAccent">@color/teal</item>
         <item name="android:windowBackground">@color/light_cream</item>
         <item name="android:navigationBarColor">@color/mustard</item>
     </style>
@@ -103,6 +103,23 @@
         <item name="android:background">@color/green</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
+
+    <style name="ButtonRedBorder">
+        <item name="android:background">@drawable/button_red_border</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonMustardBorder">
+        <item name="android:background">@drawable/button_mustard_border</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
 
     <style name="CardView1">
         <item name="cardBackgroundColor">@color/pink</item>

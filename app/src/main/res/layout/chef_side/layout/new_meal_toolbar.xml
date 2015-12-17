@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.apps.dishi.chefside.ChefLogin">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/chef_register_toolbar"
+        app:contentInsetStart="0dp"
+        style="@style/Toolbar">
+
+        <com.apps.dishi.widgets.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textSize="@dimen/guillotine_item_text_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:textColor="#fff"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</LinearLayout>
