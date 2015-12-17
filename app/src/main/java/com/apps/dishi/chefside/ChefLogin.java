@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.apps.dishi.R;
-import com.apps.dishi.useraccount.MealListActivity;
 
 public class ChefLogin extends Activity implements View.OnClickListener {
 
@@ -22,7 +21,7 @@ public class ChefLogin extends Activity implements View.OnClickListener {
 
     private void toMealListClick ()
     {
-        Intent a = new Intent(this, MealListActivity.class);
+        Intent a = new Intent(this, MealListActivityChef.class);
         startActivity(a);
     }
 

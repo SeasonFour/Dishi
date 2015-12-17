@@ -18,7 +18,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.apps.dishi.R;
-import com.apps.dishi.useraccount.Meal;
+import com.apps.dishi.data.Meal;
 import com.parse.GetDataCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;

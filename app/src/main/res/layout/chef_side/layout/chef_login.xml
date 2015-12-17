@@ -10,8 +10,7 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/chef_register_toolbar"
         app:contentInsetStart="0dp"
-        style="@style/Toolbar"
-        android:background="@color/guillotine_background_dark_grey">
+        style="@style/Toolbar">
 
         <com.apps.dishi.widgets.CanaroTextView
             android:layout_width="wrap_content"
@@ -68,7 +67,7 @@
             android:layout_marginTop="14dp" />
 
         <Button
-            style="?android:attr/buttonStyleSmall"
+            style="@style/Button4"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/chef_register_button"

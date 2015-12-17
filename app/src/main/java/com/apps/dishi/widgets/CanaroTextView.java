@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.apps.dishi.App;
+import com.apps.dishi.data.App;
 
 
 /**

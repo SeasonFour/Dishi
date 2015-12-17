@@ -1,5 +1,4 @@
-package com.apps.dishi;
-
+package com.apps.dishi.userside.chefs;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,17 +11,19 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
-import com.apps.dishi.useraccount.UserProfileActivity;
-import com.apps.dishi.useraccount.UserSettingsActivity;
+import com.apps.dishi.R;
+import com.apps.dishi.userside.UserMainActivity;
+import com.apps.dishi.userside.userprofile.UserProfileActivity;
+import com.apps.dishi.userside.userprofile.UserSettingsActivity;
 import com.yalantis.guillotine.animation.GuillotineAnimation;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class UserMainActivity extends AppCompatActivity implements View.OnClickListener {
+public class Chefs extends AppCompatActivity implements View.OnClickListener {
 
-//    Guillotine Menu Items
+    //    Guillotine Menu Items
     LinearLayout home;
     LinearLayout profile;
     LinearLayout settings;
@@ -30,9 +31,9 @@ public class UserMainActivity extends AppCompatActivity implements View.OnClickL
     private static final long RIPPLE_DURATION = 250;
 
 
-    @InjectView(R.id.user_guillotine_toolbar)
+    @InjectView(R.id.chef_details_guillotine_toolbar)
     Toolbar toolbar;
-    @InjectView(R.id.root)
+    @InjectView(R.id.chef_details_root)
     FrameLayout root;
     @InjectView(R.id.content_hamburger)
     View contentHamburger;
@@ -40,19 +41,18 @@ public class UserMainActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_side_main);
+        setContentView(R.layout.chef_card_details);
         ButterKnife.inject(this);
 
         // Tab Layout for the Fragments on the Home activity
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Recommended"));
-        tabLayout.addTab(tabLayout.newTab().setText("Menu"));
-        tabLayout.addTab(tabLayout.newTab().setText("Chefs"));
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.chef_tab_layout);
+        tabLayout.addTab(tabLayout.newTab().setText("About"));
+        tabLayout.addTab(tabLayout.newTab().setText("Dishes"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
 
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final UserPagerAdapter adapter = new UserPagerAdapter
+        final ViewPager viewPager = (ViewPager) findViewById(R.id.chef_content_pager);
+        final ChefPagerAdapter adapter = new ChefPagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(
@@ -100,28 +100,27 @@ public class UserMainActivity extends AppCompatActivity implements View.OnClickL
         settings.setOnClickListener(this);
     }
 
-            @Override
-            public void onClick(View v) {
-            switch (v.getId())
-            {
-                case R.id.home_group:
-                    Intent a = new Intent(this, UserMainActivity.class);
-                    startActivity(a);
-                    break;
+    @Override
+    public void onClick(View v) {
+        switch (v.getId())
+        {
+            case R.id.home_group:
+                Intent a = new Intent(this, UserMainActivity.class);
+                startActivity(a);
+                break;
 
-                case R.id.profile_group:
-                    Intent b = new Intent(this, UserProfileActivity.class);
-                    startActivity(b);
-                    break;
+            case R.id.profile_group:
+                Intent b = new Intent(this, UserProfileActivity.class);
+                startActivity(b);
+                break;
 
-                case R.id.settings_group:
-                    Intent c = new Intent(this, UserSettingsActivity.class);
-                    startActivity(c);
-                    break;
-            }
-
+            case R.id.settings_group:
+                Intent c = new Intent(this, UserSettingsActivity.class);
+                startActivity(c);
+                break;
         }
 
+    }
 
-   }
 
+}

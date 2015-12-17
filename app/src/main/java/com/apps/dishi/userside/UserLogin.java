@@ -1,4 +1,4 @@
-package com.apps.dishi;
+package com.apps.dishi.userside;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.apps.dishi.useraccount.MealListActivity;
+import com.apps.dishi.R;
 
 public class UserLogin extends Activity implements View.OnClickListener {
 

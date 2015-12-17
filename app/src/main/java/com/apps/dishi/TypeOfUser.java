@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.apps.dishi.chefside.ChefLogin;
+import com.apps.dishi.userside.UserLogin;
 
 public class TypeOfUser extends Activity implements View.OnClickListener {
 

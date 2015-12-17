@@ -1,12 +1,12 @@
-package com.apps.dishi;
+package com.apps.dishi.userside;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.apps.dishi.chefs.ChefFragment;
-import com.apps.dishi.menu.MenuFragment;
-import com.apps.dishi.recommend.RecommendFragment;
+import com.apps.dishi.userside.chefs.ChefFragment;
+import com.apps.dishi.userside.menu.MenuFragment;
+import com.apps.dishi.userside.recommend.RecommendFragment;
 
 
 public class UserPagerAdapter extends FragmentStatePagerAdapter {

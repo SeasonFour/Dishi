@@ -1,4 +1,4 @@
-package com.apps.dishi.useraccount;
+package com.apps.dishi.userside.userprofile;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,14 +10,13 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import com.apps.dishi.R;
-import com.apps.dishi.UserMainActivity;
+import com.apps.dishi.userside.UserMainActivity;
 import com.yalantis.guillotine.animation.GuillotineAnimation;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class UserProfileActivity extends AppCompatActivity implements View.OnClickListener {
-
+public class UserSettingsActivity extends AppCompatActivity implements View.OnClickListener {
     //    Guillotine Menu Items
     LinearLayout home;
     LinearLayout profile;
@@ -26,7 +25,7 @@ public class UserProfileActivity extends AppCompatActivity implements View.OnCli
     private static final long RIPPLE_DURATION = 250;
 
 
-    @InjectView(R.id.profile_toolbar)
+    @InjectView(R.id.settings_toolbar)
     Toolbar toolbar;
     @InjectView(R.id.root)
     FrameLayout root;
@@ -36,7 +35,7 @@ public class UserProfileActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_profile);
+        setContentView(R.layout.activity_user_settings);
         ButterKnife.inject(this);
 
         // Guillotine Menu Setup
@@ -83,5 +82,4 @@ public class UserProfileActivity extends AppCompatActivity implements View.OnCli
         }
 
     }
-
 }

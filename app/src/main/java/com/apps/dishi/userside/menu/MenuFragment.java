@@ -1,4 +1,5 @@
-package com.apps.dishi.chefs;
+package com.apps.dishi.userside.menu;
+
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,10 +10,10 @@ import android.view.ViewGroup;
 
 import com.apps.dishi.R;
 
-public class ChefAboutFragment extends Fragment {
+public class MenuFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.chef_about_fragment, container, false);
+        return inflater.inflate(R.layout.menu_fragment, container, false);
     }
 }

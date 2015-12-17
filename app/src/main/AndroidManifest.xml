@@ -17,7 +17,7 @@
         android:value="@string/parse_client_key" />
 
     <application
-        android:name=".App"
+        android:name=".data.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -42,41 +42,41 @@
             android:label="@string/app_name" />
 
         <activity
-            android:name=".UserLogin"
+            android:name=".userside.UserLogin"
             android:label="@string/app_name" />
 
         <activity
-            android:name=".UserMainActivity"
+            android:name=".userside.UserMainActivity"
             android:label="@string/app_name"
             android:theme="@style/Dishi.AppTheme.NoBar" />
 
         <activity
-            android:name=".useraccount.MealListActivity"
+            android:name=".userside.userprofile.MealListActivity"
             android:label="The Meals"
             android:theme="@style/DishiBar" />
 
         <activity android:name=".chefside.NewMealActivity" />
         <activity
-            android:name=".recommend.RecommendedLayout"
+            android:name=".userside.recommend.RecommendedLayout"
             android:label="@string/title_activity_recommended_layout"
             android:theme="@style/DishiBar" />
 
         <activity
-            android:name=".menu.Menu"
+            android:name=".userside.menu.Menu"
             android:label="@string/title_activity_menu" />
         <activity
-            android:name=".chefs.Chefs"
+            android:name=".userside.chefs.Chefs"
             android:label="@string/title_activity_chefs"
             android:theme="@style/Dishi.AppTheme.NoBar"/>
         <activity
-            android:name=".useraccount.Favourites"
+            android:name=".userside.userprofile.Favourites"
             android:label="@string/title_activity_favourites" />
         <activity
-            android:name=".useraccount.UserProfileActivity"
+            android:name=".userside.userprofile.UserProfileActivity"
             android:label="@string/title_activity_user_profile"
             android:theme="@style/Dishi.AppTheme.NoBar" />
         <activity
-            android:name=".useraccount.UserSettingsActivity"
+            android:name=".userside.userprofile.UserSettingsActivity"
             android:label="@string/title_activity_user_settings"
             android:theme="@style/Dishi.AppTheme.NoBar" />
 

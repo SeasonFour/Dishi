@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/root"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="com.apps.dishi.useraccount.UserProfileActivity">
+    tools:context=".userside.userprofile.UserProfileActivity">
 
     <View
         android:layout_gravity="top"

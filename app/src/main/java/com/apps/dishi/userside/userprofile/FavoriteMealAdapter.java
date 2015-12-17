@@ -1,4 +1,4 @@
-package com.apps.dishi.useraccount;
+package com.apps.dishi.userside.userprofile;
 
 import android.content.Context;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.apps.dishi.R;
+import com.apps.dishi.data.Meal;
 import com.parse.GetDataCallback;
 import com.parse.ParseException;
 import com.parse.ParseFile;

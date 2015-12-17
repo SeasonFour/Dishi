@@ -1,9 +1,8 @@
-package com.apps.dishi;
+package com.apps.dishi.data;
 
 import android.app.Application;
 import android.graphics.Typeface;
 
-import com.apps.dishi.useraccount.Meal;
 import com.parse.Parse;
 import com.parse.ParseACL;
 import com.parse.ParseObject;

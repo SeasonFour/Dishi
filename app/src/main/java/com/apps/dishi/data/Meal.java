@@ -1,4 +1,4 @@
-package com.apps.dishi.useraccount;
+package com.apps.dishi.data;
 
 import com.parse.ParseClassName;
 import com.parse.ParseFile;

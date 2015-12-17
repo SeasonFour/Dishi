@@ -1,4 +1,4 @@
-package com.apps.dishi.useraccount;
+package com.apps.dishi.chefside;
 
 import android.app.Activity;
 import android.app.ListActivity;
@@ -8,10 +8,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.apps.dishi.R;
-import com.apps.dishi.chefside.NewMealActivity;
+import com.apps.dishi.userside.userprofile.FavoriteMealAdapter;
+import com.apps.dishi.data.Meal;
 import com.parse.ParseQueryAdapter;
 
-public class MealListActivity extends ListActivity {
+public class MealListActivityChef extends ListActivity {
 
     private ParseQueryAdapter<Meal> mainAdapter;
     private FavoriteMealAdapter favoritesAdapter;

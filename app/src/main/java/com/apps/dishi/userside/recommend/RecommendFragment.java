@@ -1,4 +1,4 @@
-package com.apps.dishi.recommend;
+package com.apps.dishi.userside.recommend;
 
 
 import android.os.Bundle;

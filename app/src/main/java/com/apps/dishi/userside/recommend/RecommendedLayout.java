@@ -1,4 +1,4 @@
-package com.apps.dishi.recommend;
+package com.apps.dishi.userside.recommend;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.apps.dishi.R;
-import com.apps.dishi.chefs.Chefs;
-import com.apps.dishi.menu.Menu;
+import com.apps.dishi.userside.chefs.Chefs;
+import com.apps.dishi.userside.menu.Menu;
 
 
 public class RecommendedLayout extends Activity implements View.OnClickListener {

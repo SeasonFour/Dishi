@@ -1,9 +1,7 @@
-package com.apps.dishi.chefs;
+package com.apps.dishi.userside.userprofile;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -12,16 +10,13 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import com.apps.dishi.R;
-import com.apps.dishi.UserMainActivity;
-import com.apps.dishi.useraccount.UserProfileActivity;
-import com.apps.dishi.useraccount.UserSettingsActivity;
+import com.apps.dishi.userside.UserMainActivity;
 import com.yalantis.guillotine.animation.GuillotineAnimation;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-
-public class Chefs extends AppCompatActivity implements View.OnClickListener {
+public class UserProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
     //    Guillotine Menu Items
     LinearLayout home;
@@ -31,9 +26,9 @@ public class Chefs extends AppCompatActivity implements View.OnClickListener {
     private static final long RIPPLE_DURATION = 250;
 
 
-    @InjectView(R.id.chef_details_guillotine_toolbar)
+    @InjectView(R.id.profile_toolbar)
     Toolbar toolbar;
-    @InjectView(R.id.chef_details_root)
+    @InjectView(R.id.root)
     FrameLayout root;
     @InjectView(R.id.content_hamburger)
     View contentHamburger;
@@ -41,41 +36,8 @@ public class Chefs extends AppCompatActivity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.chef_card_details);
+        setContentView(R.layout.activity_user_profile);
         ButterKnife.inject(this);
-
-        // Tab Layout for the Fragments on the Home activity
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.chef_tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("About"));
-        tabLayout.addTab(tabLayout.newTab().setText("Dishes"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
-
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.chef_content_pager);
-        final ChefPagerAdapter adapter = new ChefPagerAdapter
-                (getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
-        viewPager.addOnPageChangeListener(
-                new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.setOnTabSelectedListener(
-                new TabLayout.OnTabSelectedListener() {
-                    @Override
-                    public void onTabSelected(TabLayout.Tab tab) {
-                        viewPager.setCurrentItem(tab.getPosition());
-
-                    }
-
-                    @Override
-                    public void onTabUnselected(TabLayout.Tab tab) {
-
-                    }
-
-                    @Override
-                    public void onTabReselected(TabLayout.Tab tab) {
-
-                    }
-                }
-        );
 
         // Guillotine Menu Setup
         if (toolbar != null) {
@@ -121,6 +83,5 @@ public class Chefs extends AppCompatActivity implements View.OnClickListener {
         }
 
     }
-
 
 }

@@ -1,4 +1,4 @@
-package com.apps.dishi.useraccount;
+package com.apps.dishi.userside.userprofile;
 
 import android.os.Bundle;
 import android.app.Activity;

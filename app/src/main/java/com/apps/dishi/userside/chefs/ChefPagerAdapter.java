@@ -1,4 +1,4 @@
-package com.apps.dishi.chefs;
+package com.apps.dishi.userside.chefs;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

@@ -8,7 +8,7 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import com.apps.dishi.R;
-import com.apps.dishi.useraccount.Meal;
+import com.apps.dishi.data.Meal;
 
 /*
  * NewMealActivity contains two fragments that handle
