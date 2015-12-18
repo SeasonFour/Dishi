@@ -25,6 +25,7 @@ public class MealListActivityChef extends AppCompatActivity {
         setContentView(R.layout.chef_side_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.chef_menu_toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(null);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

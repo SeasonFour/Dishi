@@ -64,6 +64,7 @@
     <string name="chef_specialty">Anything in a stew</string>
     <string name="add_new_meal">Add New Meal</string>
     <string name="chef_login_button">Log In</string>
+    <string name="menu_activity_title">Menu</string>
 
 
 </resources>

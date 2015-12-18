@@ -63,6 +63,7 @@
         <activity android:name=".chefside.NewMealActivity" />
 
 
+        <activity android:name="userside.menu.menufilter.MenuActivity" />
 
         <activity
             android:name=".userside.recommend.RecommendedLayout"

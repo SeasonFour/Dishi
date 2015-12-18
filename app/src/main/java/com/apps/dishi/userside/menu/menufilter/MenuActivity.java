@@ -1,12 +1,13 @@
-package com.apps.dishi.userside;
-
+package com.apps.dishi.userside.menu.menufilter;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,23 +16,36 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.apps.dishi.R;
-import com.apps.dishi.userside.menu.menufilter.MenuActivity;
+import com.apps.dishi.userside.UserMainActivity;
+import com.apps.dishi.userside.UserPagerAdapter;
 import com.apps.dishi.userside.userprofile.FavoriteMealAdapter;
 import com.apps.dishi.userside.userprofile.UserSettingsActivity;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.yalantis.guillotine.animation.GuillotineAnimation;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
+//import com.rufflez.parseloginexample.R;
 
-public class UserMainActivity extends AppCompatActivity implements View.OnClickListener {
-//    Favourite stuff
+/**
+ * Created by victor on 9/2/14.
+ */
+public class MenuActivity extends FragmentActivity implements View.OnClickListener{
+    //    Favourite stuff
     ListView listView;
     private FavoriteMealAdapter favoritesAdapter;
 
-    FloatingActionButton fab;
+    ViewPager pager;
+    ArrayList<String> types;
 
-//    Guillotine Menu Items
+    //    Guillotine Menu Items
     LinearLayout home;
     LinearLayout profile;
     LinearLayout settings;
@@ -39,22 +53,21 @@ public class UserMainActivity extends AppCompatActivity implements View.OnClickL
     private static final long RIPPLE_DURATION = 250;
 
 
-    @InjectView(R.id.user_guillotine_toolbar)
+    @InjectView(R.id.main_menu_toolbar)
     Toolbar toolbar;
     @InjectView(R.id.root)
     FrameLayout root;
     @InjectView(R.id.content_hamburger)
     View contentHamburger;
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_side_main);
+        setContentView(R.layout.content_menu);
         ButterKnife.inject(this);
 
-        fab = (FloatingActionButton) findViewById(R.id.menu_fab);
-        fab.setOnClickListener(this);
-
+ //        getActionBar().setTitle("Andy's Pet Store");
         // Tab Layout for the Fragments on the Home activity
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.addTab(tabLayout.newTab().setText("Recommended"));
@@ -64,9 +77,9 @@ public class UserMainActivity extends AppCompatActivity implements View.OnClickL
 
 
         final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final UserPagerAdapter adapter = new UserPagerAdapter
+        final UserPagerAdapter userPagerAdapter = new UserPagerAdapter
                 (getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(adapter);
+        viewPager.setAdapter(userPagerAdapter);
         viewPager.addOnPageChangeListener(
                 new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.setOnTabSelectedListener(
@@ -89,11 +102,11 @@ public class UserMainActivity extends AppCompatActivity implements View.OnClickL
                 }
         );
 
-        // Guillotine Menu Setup
-        if (toolbar != null) {
-            setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle(null);
-        }
+//        // Guillotine Menu Setup
+//        if (toolbar != null) {
+//            setSupportActionBar(toolbar);
+//            getSupportActionBar().setTitle(null);
+//        }
 
         View guillotineMenu = LayoutInflater.from(this).inflate(R.layout.guillotine_user, null);
         root.addView(guillotineMenu);
@@ -111,39 +124,73 @@ public class UserMainActivity extends AppCompatActivity implements View.OnClickL
         settings = (LinearLayout) findViewById(R.id.settings_group);
         settings.setOnClickListener(this);
 
+        pager = (ViewPager)findViewById(R.id.pager);
+        final ViewPagerFragmentAdapter adapter = new ViewPagerFragmentAdapter(getSupportFragmentManager());
+        types = new ArrayList<String>();
 
-        ///to favourites page
+        ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("MealType");
+        query.addAscendingOrder("Type");
+        query.findInBackground(new FindCallback<ParseObject>() {
+            @Override
+            public void done(List<ParseObject> parseObjects, ParseException e) {
+                if (e == null) {
+                    for (ParseObject type : parseObjects) {
+                        String petType = type.getString("Type");
+                        types.add(petType);
+                    }
+                    pager.setAdapter(adapter);
+                }
+            }
+        });
+
         favoritesAdapter = new FavoriteMealAdapter(this);
+
+
     }
 
     @Override
     public void onClick(View v) {
-    switch (v.getId())
-    {
-        case R.id.menu_fab:
-            Intent b = new Intent(this, MenuActivity.class);
-            startActivity(b);
-            break;
+        switch (v.getId()) {
+            case R.id.home_group:
+                Intent a = new Intent(this, UserMainActivity.class);
+                startActivity(a);
+                break;
 
-        case R.id.home_group:
-            Intent a = new Intent(this, UserMainActivity.class);
-            startActivity(a);
-            break;
+            case R.id.profile_group:
+                showFavorites();
+                break;
 
-        case R.id.profile_group:
-            showFavorites();
-            break;
-
-        case R.id.settings_group:
-            Intent c = new Intent(this, UserSettingsActivity.class);
-            startActivity(c);
-            break;
+            case R.id.settings_group:
+                Intent c = new Intent(this, UserSettingsActivity.class);
+                startActivity(c);
+                break;
+        }
     }
-
-}
-
     private void showFavorites() {
         favoritesAdapter.loadObjects();
         listView.setAdapter(favoritesAdapter);   }
-   }
 
+    private class ViewPagerFragmentAdapter extends FragmentPagerAdapter {
+        public ViewPagerFragmentAdapter(FragmentManager fm){
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position){
+            return PageFragment.create(position+1, types.get(position).toString());
+        }
+
+        @Override
+        public int getCount(){
+            return types.size();
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position){
+            return types.get(position).toString();
+        }
+    }
+
+
+
+}

@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.apps.dishi.R;
 import com.parse.ParseException;
+import com.parse.ParseFile;
 import com.parse.ParseImageView;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -48,10 +49,15 @@ class ChefListAdapter extends ParseQueryAdapter<ParseObject> {
         super.getItemView(object, v, parent);
 
         ParseImageView photo = (ParseImageView) v.findViewById(R.id.food_icon);
-        TextView title = (TextView) v.findViewById(R.id.meal_name);
+        ParseFile imageFile = object.getParseFile("photo");
+        if (imageFile != null) {
+            photo.setParseFile(imageFile);
+            photo.loadInBackground();
+        }
 
-        photo.setParseFile(object.getParseFile("photo"));
+        TextView title = (TextView) v.findViewById(R.id.meal_name);
         title.setText(object.getString("title"));
+
 
         return v;
 

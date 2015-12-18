@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.apps.dishi.userside.chefs.ChefFragment;
-import com.apps.dishi.userside.menu.MenuFragment;
 import com.apps.dishi.userside.recommend.RecommendFragment;
 
 
@@ -21,8 +20,6 @@ public class UserPagerAdapter extends FragmentStatePagerAdapter {
             case 0:
                 return new RecommendFragment();
             case 1:
-                return new MenuFragment();
-            case 2:
                 return new ChefFragment();
             default:
                 return null;
