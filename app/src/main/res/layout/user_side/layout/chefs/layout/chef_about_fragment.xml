@@ -5,7 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@color/puke"
     tools:context=".userside.chefs.ChefAboutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/chef1_about"
+        android:gravity="start"
+        android:textColor="#000"
+        android:textSize="15sp"/>
 
 
 

@@ -41,7 +41,8 @@ public class NewMealFragment extends Fragment {
     private Button saveButton;
     private Button cancelButton;
     private TextView mealName;
-    private Spinner mealRating;
+
+    private Spinner spinner1;
     private ParseImageView mealPreview;
 
     @Override
@@ -56,14 +57,16 @@ public class NewMealFragment extends Fragment {
 
         mealName = ((EditText) v.findViewById(R.id.meal_name));
 
-        // The mealRating spinner lets people assign favorites of meals they've
-        // eaten.
-        // Meals with 4 or 5 ratings will appear in the Favorites view.
-        mealRating = ((Spinner) v.findViewById(R.id.rating_spinner));
-        ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter
-                .createFromResource(getActivity(), R.array.ratings_array,
+
+        //        spinner for the meal type
+
+        spinner1 = (Spinner) v.findViewById(R.id.spinner1);
+        ArrayAdapter<CharSequence> spinner2Adapter = ArrayAdapter
+                .createFromResource(getActivity(), R.array.meal_types_arrays,
                         android.R.layout.simple_spinner_dropdown_item);
-        mealRating.setAdapter(spinnerAdapter);
+        spinner1.setAdapter(spinner2Adapter);
+
+
 
         photoButton = ((ImageButton) v.findViewById(R.id.photo_button));
         photoButton.setOnClickListener(new View.OnClickListener() {
@@ -91,8 +94,7 @@ public class NewMealFragment extends Fragment {
                 // Associate the meal with the current user
                 meal.setAuthor(ParseUser.getCurrentUser());
 
-                // Add the rating
-                meal.setRating(mealRating.getSelectedItem().toString());
+//
 
                 // If the user added a photo, that data will be
                 // added in the CameraFragment

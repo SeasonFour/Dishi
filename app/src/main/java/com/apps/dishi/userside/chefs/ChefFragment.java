@@ -19,8 +19,11 @@ public class ChefFragment extends Fragment implements View.OnClickListener {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.chef_fragment, container, false);
+
         ImageView ChefPhoto = (ImageView) view.findViewById(R.id.chef_image);
         ChefPhoto.setOnClickListener(this);
+        ImageView ChefPhoto2 = (ImageView) view.findViewById(R.id.chef_image2);
+        ChefPhoto2.setOnClickListener(this);
         return view;
     }
 
@@ -31,6 +34,10 @@ public class ChefFragment extends Fragment implements View.OnClickListener {
             case R.id.chef_image:
                 Intent a = new Intent(getActivity(), Chefs.class);
                 startActivity(a);
+                break;
+            case R.id.chef_image2:
+                Intent b = new Intent(getActivity(), ChefsTwo.class);
+                startActivity(b);
                 break;
 
         }

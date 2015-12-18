@@ -2,7 +2,6 @@ package com.apps.dishi.userside.menu.menufilter;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -17,7 +16,6 @@ import android.widget.ListView;
 
 import com.apps.dishi.R;
 import com.apps.dishi.userside.UserMainActivity;
-import com.apps.dishi.userside.UserPagerAdapter;
 import com.apps.dishi.userside.userprofile.FavoriteMealAdapter;
 import com.apps.dishi.userside.userprofile.UserSettingsActivity;
 import com.parse.FindCallback;
@@ -68,45 +66,12 @@ public class MenuActivity extends FragmentActivity implements View.OnClickListen
         ButterKnife.inject(this);
 
  //        getActionBar().setTitle("Andy's Pet Store");
-        // Tab Layout for the Fragments on the Home activity
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
-        tabLayout.addTab(tabLayout.newTab().setText("Recommended"));
-//        tabLayout.addTab(tabLayout.newTab().setText("Menu"));
-        tabLayout.addTab(tabLayout.newTab().setText("Chefs"));
-        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-
-
-        final ViewPager viewPager = (ViewPager) findViewById(R.id.pager);
-        final UserPagerAdapter userPagerAdapter = new UserPagerAdapter
-                (getSupportFragmentManager(), tabLayout.getTabCount());
-        viewPager.setAdapter(userPagerAdapter);
-        viewPager.addOnPageChangeListener(
-                new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
-        tabLayout.setOnTabSelectedListener(
-                new TabLayout.OnTabSelectedListener() {
-                    @Override
-                    public void onTabSelected(TabLayout.Tab tab) {
-                        viewPager.setCurrentItem(tab.getPosition());
-
-                    }
-
-                    @Override
-                    public void onTabUnselected(TabLayout.Tab tab) {
-
-                    }
-
-                    @Override
-                    public void onTabReselected(TabLayout.Tab tab) {
-
-                    }
-                }
-        );
 
 //        // Guillotine Menu Setup
 //        if (toolbar != null) {
 //            setSupportActionBar(toolbar);
 //            getSupportActionBar().setTitle(null);
-//        }
+//           }
 
         View guillotineMenu = LayoutInflater.from(this).inflate(R.layout.guillotine_user, null);
         root.addView(guillotineMenu);
@@ -126,7 +91,7 @@ public class MenuActivity extends FragmentActivity implements View.OnClickListen
 
         pager = (ViewPager)findViewById(R.id.pager);
         final ViewPagerFragmentAdapter adapter = new ViewPagerFragmentAdapter(getSupportFragmentManager());
-        types = new ArrayList<String>();
+        types = new ArrayList<>();
 
         ParseQuery<ParseObject> query = new ParseQuery<ParseObject>("MealType");
         query.addAscendingOrder("Type");

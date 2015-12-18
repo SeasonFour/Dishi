@@ -25,23 +25,36 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
 
+    <TextView
+        android:id="@+id/meal_type_text"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/food_type_prompt"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:layout_below="@+id/meal_name_text"
+        android:layout_alignStart="@+id/meal_name_text" />
+
     <Spinner
-        android:id="@+id/rating_spinner"
+        android:id="@+id/spinner1"
         android:layout_width="100dp"
         android:layout_height="40dp"
+        android:entries="@array/meal_types_arrays"
+        android:prompt="@string/food_type_prompt"
         android:layout_below="@+id/meal_name"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="10dp" />
+        android:layout_alignEnd="@+id/meal_name" />
 
     <com.parse.ParseImageView
         android:id="@+id/meal_preview_image"
         android:layout_width="320dp"
         android:layout_height="200dp"
-        android:layout_below="@+id/rating_spinner"
+        android:layout_below="@+id/meal_type_text"
         android:layout_centerHorizontal="true"
-        android:background="#cccaca"
+        android:background="@color/mustard"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"/>
-
 
     <ImageButton
         style="@style/Button4"

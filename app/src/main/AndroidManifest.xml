@@ -19,7 +19,7 @@
     <application
         android:name=".data.App"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/dishi_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Dishi.AppTheme.NoBar">
@@ -63,7 +63,7 @@
         <activity android:name=".chefside.NewMealActivity" />
 
 
-        <activity android:name="userside.menu.menufilter.MenuActivity" />
+        <activity android:name=".userside.menu.menufilter.MenuActivity" />
 
         <activity
             android:name=".userside.recommend.RecommendedLayout"
@@ -74,9 +74,15 @@
             android:name=".userside.menu.Menu"
             android:label="@string/title_activity_menu" />
         <activity
-            android:name=".userside.chefs.Chefs"
-            android:label="@string/title_activity_chefs"
-            android:theme="@style/Dishi.AppTheme.NoBar"/>
+        android:name=".userside.chefs.Chefs"
+        android:label="@string/title_activity_chefs"
+        android:theme="@style/Dishi.AppTheme.NoBar"/>
+
+
+        <activity
+            android:name=".userside.chefs.ChefsTwo" />
+
+
         <activity
             android:name=".userside.userprofile.Favourites"
             android:label="@string/title_activity_favourites" />

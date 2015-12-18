@@ -14,7 +14,7 @@
         android:background="@color/mustard">
 
         <View
-            android:id="@+id/chef_details_view"
+            android:id="@+id/chef_details_view2"
             android:layout_gravity="top"
             android:layout_width="match_parent"
             android:background="@color/mustard"
@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/chef_name"
+                android:text="@string/chef_name2"
                 android:textSize="@dimen/guillotine_item_text_size"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
@@ -48,7 +48,7 @@
             android:layout_width="200dp"
             android:layout_height="155dp"
             android:id="@+id/chef_image"
-            android:src="@drawable/chefface"
+            android:src="@drawable/chefface2"
             android:layout_below="@+id/chef_details_guillotine_toolbar"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp" />

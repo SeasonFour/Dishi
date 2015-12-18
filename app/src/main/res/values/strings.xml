@@ -67,4 +67,21 @@
     <string name="menu_activity_title">Menu</string>
 
 
+    <!--spinner for the food types-->
+    <string name="food_type_prompt">Choose meal type</string>
+
+    <string name="rating_prompt">Rate this meal</string>
+
+    <string-array name="meal_types_arrays">
+        <item>Appetizer</item>
+        <item>Dessert</item>
+        <item>Brunch</item>
+        <item>Lunch</item>
+        <item>Drinks</item>
+        <item>Vegetarian</item>
+
+    </string-array>
+
+
+
 </resources>

@@ -70,7 +70,7 @@
 
             <TextView
                 android:id="@+id/food_description_short"
-                android:layout_width="220dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:text="@string/food_description_short"
                 android:layout_margin="5dp"
@@ -78,7 +78,18 @@
                 android:layout_marginStart="10dp"
                 android:padding="3dp"
                 android:paddingEnd="5dp"
-                android:paddingStart="3dp"/>
+                android:paddingStart="3dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/five_hundred_bob"
+                android:id="@+id/price_meal"
+                android:layout_alignTop="@+id/food_description_short"
+                android:layout_toEndOf="@+id/food_description_short"
+                android:layout_marginTop="17dp" />
 
             <Button
                 android:id="@+id/order_button"
@@ -111,7 +122,7 @@
                 android:id="@+id/food_icon1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/meat"
+                android:src="@drawable/chicken"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="-10dp"
@@ -126,7 +137,7 @@
                 android:id="@+id/chef_image1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/chefface"
+                android:src="@drawable/chefface2"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="10dp"
@@ -157,15 +168,17 @@
 
             <TextView
                 android:id="@+id/food_description_short1"
-                android:layout_width="220dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:text="@string/food_description_short"
+                android:text="Slow cooked chicken in the chef's special marinade"
                 android:layout_margin="5dp"
                 android:layout_below="@+id/food_icon1"
                 android:layout_marginStart="10dp"
                 android:padding="3dp"
                 android:paddingEnd="5dp"
-                android:paddingStart="3dp"/>
+                android:paddingStart="3dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#000"/>
 
             <Button
                 android:id="@+id/order_button1"
@@ -176,9 +189,20 @@
                 android:layout_below="@+id/food_icon1"
                 android:layout_alignEnd="@+id/food_icon1"
                 android:layout_marginEnd="10dp"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"/>
 
-            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/five_hundred_bob"
+                android:id="@+id/price_meal_2"
+                android:layout_alignTop="@+id/food_description_short1"
+                android:layout_toEndOf="@+id/food_description_short1"
+                android:layout_marginTop="17dp" />
+
+        </RelativeLayout>
         </android.support.v7.widget.CardView>
 
     </RelativeLayout>

@@ -4,4 +4,10 @@
     <string name="title_activity_user_settings">UserSettingsActivity</string>
     <string name="title_activity_chef_about_fragment">ChefAboutFragment</string>
     <string name="title_activity_chef_dishes_fragment">ChefDishesFragment</string>
+    <string name="chef1_about">Cooking is what I LOVE to do. I\'ve been doing so for the last 3 years! She is a writer, photographer and mother of four.</string>
+    <string name="food_title_2">Finger Licking Chicken</string>
+    <string name="chef_name2">Papa Kabs</string>
+    <string name="favourite_dish_2">Nyama Choma</string>
+    <string name="chef_speciality2">Chicken</string>
+    <string name="five_hundred_bob">KES 500</string>
 </resources>
