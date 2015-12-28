@@ -25,6 +25,14 @@ public class Meal extends ParseObject {
     public void setTitle(String title) {
         put("title", title);
     }
+    public String getType(){
+        return getString("MealType");
+    }
+
+    public void setMealType(String Type){
+        put("Type", Type);
+    }
+
 
     public ParseUser getAuthor() {
         return getParseUser("author");
@@ -48,6 +56,11 @@ public class Meal extends ParseObject {
 
     public void setPhotoFile(ParseFile file) {
         put("photo", file);
+    }
+
+    @Override
+    public String toString(){
+        return getString("Name") + "\n" + getString("Type");
     }
 
 }

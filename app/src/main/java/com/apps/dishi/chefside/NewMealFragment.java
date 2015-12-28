@@ -93,6 +93,10 @@ public class NewMealFragment extends Fragment {
 
                 // Associate the meal with the current user
                 meal.setAuthor(ParseUser.getCurrentUser());
+                //                set the type of meal
+
+                meal.setMealType(spinner1.getSelectedItem().toString());
+                // Add the rating
 
 //
 
