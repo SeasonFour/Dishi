@@ -1,0 +1,184 @@
+[33mcommit 27c75eb85c9ca28cdb893ccd1d05dc95a131ec57[m
+Author: Victorgichohi <victorgichohi48@gmail.com>
+Date:   Tue Jan 12 18:58:15 2016 +0300
+
+    experiment fragment with cardview
+
+[33mcommit 0fe6ab32912eac16fed40800a197c8aa8a58e238[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Fri Dec 18 11:08:19 2015 +0300
+
+    First MVP - COMPLETE
+
+[33mcommit 848edbd6b1424ec8c69ab13bb0d77d4de38eab39[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Fri Dec 18 07:27:17 2015 +0300
+
+    Integrating Menu on Fab - not complete; Setting favourites to profile - not complete
+
+[33mcommit 62dc2df0cd367cfc5f63397203bdf8ffe47dfb0c[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Fri Dec 18 00:30:34 2015 +0300
+
+    Layout Edits
+
+[33mcommit 7b40d83b5878262b879a1132410d0bed14504bac[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Thu Dec 17 21:49:36 2015 +0300
+
+    Customized Parse Adapter; populates our own cards in the chef's section. FAB added to Chef's section
+
+[33mcommit 1c69e532a60561032a7398f58b99f8483cc3c8e1[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Thu Dec 17 11:16:52 2015 +0300
+
+    Java Files rearrangement
+
+[33mcommit 9b89aadd8a868f3c6fdfd50697067ef46dc256e6[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Wed Dec 16 12:38:22 2015 +0300
+
+    New 'yellow' theme implemented
+
+[33mcommit eaa454e571573b2a2191e77e65402c88b1299985[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Tue Dec 15 16:03:42 2015 +0300
+
+    Chef Fragment: Card added; Chef details view created
+
+[33mcommit f963a79f4ee47a757bb2332f78a563f282991d85[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Tue Dec 15 06:21:54 2015 +0300
+
+    Guillotine Menu: Added to whole user side
+
+[33mcommit 2818512650f02f3e0e2eb70452518f1fbd85043a[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Tue Dec 15 04:49:52 2015 +0300
+
+    Guillotine Menu - Implemented in Main User Activity
+
+[33mcommit d7644fff2604d301b3ae8a5c40c3852bc249b311[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Mon Dec 14 10:11:05 2015 +0300
+
+    Recommended activity card-layout
+
+[33mcommit 741b32f1d6e633bece2c2b5012470265e96ee159[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Sun Dec 13 05:56:19 2015 +0300
+
+    Improved Layout: with Chef and User(eater) side sign ups
+
+[33mcommit 0f59e6b237167a4d25a7035b0d30b5e4e3265c40[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Sat Dec 12 11:26:45 2015 +0300
+
+    Projects Merged - UI and Picadd projects now in Dishi and working
+
+[33mcommit 5a3283bbef0103fb1e072af4984a4bc13a570ce6[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Sat Dec 12 07:42:37 2015 +0300
+
+    Java files rearranged
+
+[33mcommit 7a47f0b333377840230695c8b7582fe80f51e33e[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Sat Dec 12 07:42:17 2015 +0300
+
+    Layout rearrangement: Userside and Chefside
+
+[33mcommit 007d1b68fb96a568408bab7064d9e1605a9b5161[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Fri Dec 11 13:41:19 2015 +0300
+
+    Recommended, Menu and Chefs Fragments added to the Main Activity
+
+[33mcommit cbcea719e1220f5b5e68f9552b81b09b8b45d4a1[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Thu Dec 10 17:01:59 2015 +0300
+
+    User side: General Layout complete; On click Buttons working in all activities
+
+[33mcommit ea94c3b7d84310acd7e0f73859af4c9d298fb0c9[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Thu Dec 10 14:28:39 2015 +0300
+
+    Gradle and Manifest set up
+
+[33mcommit 0b1e18a8bc270e7345a12c7e9f48a4b0e3d03f8d[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Thu Dec 10 14:28:10 2015 +0300
+
+    Rearranging fiiles into folders; Created Buttons and onclick listeners in each activity
+
+[33mcommit 462bdbf26ef4614f3df4c85fcfbf3a4f67f430b7[m
+Merge: b21d1c8 80ac08e
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Thu Dec 10 10:42:53 2015 +0300
+
+    pull from remote merge
+
+[33mcommit b21d1c81dff54c90db150ce0d02666860e36f1fa[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Thu Dec 10 10:22:00 2015 +0300
+
+    New recommended package
+
+[33mcommit 80ac08ef3bd61a35b5a6a84308706c71c1463b50[m
+Merge: 8c9a913 91f75c0
+Author: Wanjugu Irene <iWanjugu@users.noreply.github.com>
+Date:   Tue Dec 8 19:33:53 2015 +0300
+
+    Merge pull request #2 from SeasonFour/wanjugu
+    
+    Wanjugu
+
+[33mcommit 91f75c0216ce8a5f1f5c72344dce522e293ea8e7[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Tue Dec 8 18:19:18 2015 +0300
+
+    recommended UI - semi-complete
+
+[33mcommit 361184db55b46c11b1dfcb8c1f4fc460d467fab8[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Fri Dec 4 15:53:46 2015 +0300
+
+    OnClick set on Login and Registration buttons
+
+[33mcommit fa081323eaa1b877db7216608f6abd0427e2fbf5[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Fri Dec 4 14:39:19 2015 +0300
+
+    Recommended Layout
+
+[33mcommit c7d16d7023f278ade30859dde12e9c8ad7f615ee[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Fri Dec 4 03:09:49 2015 +0300
+
+    Assests for recommended layout section
+
+[33mcommit 8c9a91355d1cd64576125a251c2744fee96d3a8a[m
+Merge: e244270 6ec52e4
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Tue Dec 1 14:10:25 2015 +0300
+
+    Merge branch 'master' of https://github.com/SeasonFour/Dishi
+
+[33mcommit e244270e41c818f594fdaba24f55afd19bc95cd2[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Tue Dec 1 14:09:40 2015 +0300
+
+    Project Initiated - Additional Activities
+
+[33mcommit 5c45162fe33ef54e48eea0528528db377438dacf[m
+Author: Wanjugu Irene <ireneemaina@gmail.com>
+Date:   Tue Dec 1 12:42:07 2015 +0300
+
+    activities added
+
+[33mcommit 6ec52e4af75ca6cf7f6f343e406c560e570a4d7c[m
+Author: victor gichohi <victorgichohi48@gmail.com>
+Date:   Tue Dec 1 12:26:41 2015 +0300
+
+    Initial commit
