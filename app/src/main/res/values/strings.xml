@@ -72,6 +72,7 @@
 
     <string name="rating_prompt">Rate this meal</string>
 
+
     <string-array name="meal_types_arrays">
         <item>Appetizer</item>
         <item>Dessert</item>
@@ -79,9 +80,17 @@
         <item>Lunch</item>
         <item>Drinks</item>
         <item>Vegetarian</item>
-
     </string-array>
 
+    <!--Checkout -->
+    <string-array name="payment_methods">
+        <item>M-Pesa</item>
+        <item>Cash on Delivery</item>
+    </string-array>
+
+    <string name="checkout_title">CHECKOUT</string>
+    <string name="checkout_total">Total(KSH):</string>
+    <string name="choose_payment_method">Choose Payment Method:</string>
 
 
 </resources>

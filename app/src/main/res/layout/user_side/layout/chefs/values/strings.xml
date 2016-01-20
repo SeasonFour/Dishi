@@ -10,4 +10,5 @@
     <string name="favourite_dish_2">Nyama Choma</string>
     <string name="chef_speciality2">Chicken</string>
     <string name="five_hundred_bob">KES 500</string>
+    <string name="title_activity_checkout">CheckoutActivity</string>
 </resources>

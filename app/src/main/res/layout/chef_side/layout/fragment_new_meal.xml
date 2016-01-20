@@ -64,13 +64,14 @@
         android:src="@drawable/ic_action_photo"
         android:layout_below="@+id/meal_preview_image"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="5dp"/>
+        android:layout_marginBottom="15dp"/>
 
     <Button
         android:id="@+id/save_button"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="@string/save_button_text"
+        style="@style/Button2"
         android:layout_below="@+id/photo_button"
         android:layout_toStartOf="@+id/photo_button" />
 
@@ -79,6 +80,7 @@
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="@string/cancel_button_text"
+        style="@style/Button"
         android:layout_alignTop="@+id/save_button"
         android:layout_toEndOf="@+id/photo_button" />
 

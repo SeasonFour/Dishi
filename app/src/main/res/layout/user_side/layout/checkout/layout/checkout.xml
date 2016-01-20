@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/checkout_guillotine_toolbar"
+        app:contentInsetStart="0dp"
+        style="@style/Toolbar">
+
+        <ImageView
+            android:id="@+id/content_hamburger"
+            style="@style/ImageView.Hamburger"
+            android:src="@drawable/ic_menu_90" />
+
+        <com.apps.dishi.widgets.CanaroTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/checkout_title"
+            android:textSize="@dimen/guillotine_item_text_size"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:textColor="#fff"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_cream">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkout_cardview"
+            android:background="@color/light_cream">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:layout_margin="3dp">
+
+                <com.parse.ParseImageView
+                    android:id="@+id/food_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/meat"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:id="@+id/meal_name"
+                    android:text="@string/food_title"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_alignTop="@+id/food_icon"
+                    android:layout_toEndOf="@+id/food_icon"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/guillotine_background"/>
+
+                <TextView
+                    android:id="@+id/price_meal"
+                    android:text="@string/five_hundred_bob"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/meal_name"
+                    android:layout_alignStart="@+id/meal_name" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/checkout_total"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/five_hundred_bob"
+                android:id="@+id/TotalSummary"
+                android:layout_alignTop="@+id/total"
+                android:layout_marginStart="5dp"
+                android:layout_alignStart="@+id/checkout_spinner" />
+
+            <TextView
+                android:id="@+id/payment_method_text"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_payment_method"
+                android:layout_below="@id/total"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="17sp"/>
+
+            <Spinner
+                android:id="@+id/checkout_spinner"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:entries="@array/payment_methods"
+                android:layout_below="@+id/total"
+                android:layout_toEndOf="@+id/payment_method_text"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/checkout_button"
+                style="@style/Button3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/checkout_title"
+                android:textSize="15sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/checkout_spinner"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="30dp" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

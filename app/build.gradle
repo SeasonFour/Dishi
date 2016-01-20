@@ -31,6 +31,7 @@ android {
                     'src/main/res/layout/user_side/layout/menu',
                     'src/main/res/layout/user_side/layout/recommended',
                     'src/main/res/layout/user_side/layout/userprofile',
+                    'src/main/res/layout/user_side/layout/checkout',
                     'src/main/res/layout/user_side',
                     'src/main/res/layout/chef_side',
                     'src/main/res']
